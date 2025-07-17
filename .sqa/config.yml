@@ -16,32 +16,32 @@ sqa_criteria:
     repos:
       github.com/NicoSchlw/run_dynamic_source_inversion_FD3D_TSN git:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-azure-kudu.sh
-        container: qc.acc_fuzzy-denim-dragonfly
+        - /usr/bin/env sh .sqa/script.grumpy-turquoise-sloth.sh
+        container: qc.acc_skinny-cream-monkey
   QC.Doc:
     repos:
       github.com/NicoSchlw/run_dynamic_source_inversion_FD3D_TSN find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-persimmon-forest.sh
-        container: qc.doc_craggy-crimson-akbash
+        - /usr/bin/env sh .sqa/script.crappy-yellow-sheepdog.sh
+        container: qc.doc_leaky-cornflower-flamingo
       github.com/NicoSchlw/run_dynamic_source_inversion_FD3D_TSN git:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-bistre-stingray.sh
-        container: qc.doc_hazy-alizarin-chinook
+        - /usr/bin/env sh .sqa/script.cheeky-chartreuse-wasp.sh
+        container: qc.doc_gimpy-cornflower-fossa
       github.com/NicoSchlw/run_dynamic_source_inversion_FD3D_TSN markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-brass-spider.sh
-        container: qc.doc_sleepy-lemon-chamois
+        - /usr/bin/env sh .sqa/script.crabby-bistre-wrasse.sh
+        container: qc.doc_queasy-viridian-hyena
   QC.Lic:
     repos:
       github.com/NicoSchlw/run_dynamic_source_inversion_FD3D_TSN licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-black-eleuth.sh
-        container: qc.lic_sleazy-red-tarantula
+        - /usr/bin/env sh .sqa/script.smelly-harlequin-serval.sh
+        container: qc.lic_fuzzy-chestnut-coati
   QC.Ver:
     repos:
       github.com/NicoSchlw/run_dynamic_source_inversion_FD3D_TSN get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-azure-centipede.sh
-        container: qc.ver_clammy-tangerine-meerkat
+        - /usr/bin/env sh .sqa/script.crappy-persimmon-crab.sh
+        container: qc.ver_snoopy-vermilion-dalmatian
 timeout: 5400
