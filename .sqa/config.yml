@@ -7,7 +7,6 @@ config:
     github.com/NicoSchlw/run_dynamic_source_inversion_FD3D_TSN:
       branch: main
       repo: https://github.com/NicoSchlw/run_dynamic_source_inversion_FD3D_TSN
-      subfolder: DTC74/WF7401/ST740102/src
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
@@ -16,32 +15,32 @@ sqa_criteria:
     repos:
       github.com/NicoSchlw/run_dynamic_source_inversion_FD3D_TSN git:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-turquoise-sloth.sh
-        container: qc.acc_skinny-cream-monkey
+        - /usr/bin/env sh .sqa/script.jumpy-turquoise-snail.sh
+        container: qc.acc_snazzy-salmon-tetra
   QC.Doc:
     repos:
       github.com/NicoSchlw/run_dynamic_source_inversion_FD3D_TSN find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-yellow-sheepdog.sh
-        container: qc.doc_leaky-cornflower-flamingo
+        - /usr/bin/env sh .sqa/script.wheezy-cornflower-bombay.sh
+        container: qc.doc_snazzy-cyan-quetzal
       github.com/NicoSchlw/run_dynamic_source_inversion_FD3D_TSN git:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-chartreuse-wasp.sh
-        container: qc.doc_gimpy-cornflower-fossa
+        - /usr/bin/env sh .sqa/script.slimy-cobalt-dollar.sh
+        container: qc.doc_leaky-cyan-newt
       github.com/NicoSchlw/run_dynamic_source_inversion_FD3D_TSN markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-bistre-wrasse.sh
-        container: qc.doc_queasy-viridian-hyena
+        - /usr/bin/env sh .sqa/script.scummy-flax-quoll.sh
+        container: qc.doc_fuzzy-brown-earwig
   QC.Lic:
     repos:
       github.com/NicoSchlw/run_dynamic_source_inversion_FD3D_TSN licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-harlequin-serval.sh
-        container: qc.lic_fuzzy-chestnut-coati
+        - /usr/bin/env sh .sqa/script.geeky-gold-bee.sh
+        container: qc.lic_frumpy-cerulean-sheepdog
   QC.Ver:
     repos:
       github.com/NicoSchlw/run_dynamic_source_inversion_FD3D_TSN get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-persimmon-crab.sh
-        container: qc.ver_snoopy-vermilion-dalmatian
+        - /usr/bin/env sh .sqa/script.homey-cyan-grasshopper.sh
+        container: qc.ver_thirsty-copper-deer
 timeout: 5400
